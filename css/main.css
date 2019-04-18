@@ -1,0 +1,159 @@
+* {
+  padding: 0;
+  margin:0
+}
+
+html,
+body {
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+}
+
+nav ul {
+    text-align: right;
+    position: fixed;
+    width: 100%;
+    background-color: #34495e;
+    padding:0.625rem;
+    font-size:1.125rem;
+  }
+  nav ul li {
+    display: inline-block;
+    margin: 50px;
+    margin-bottom: 15px;
+    margin-top: 25px;
+    
+  }
+
+  nav ul li a {
+    text-decoration: none;
+    color: #e6e6e6;
+  }
+
+.about {
+    top: 0;
+    background: #edf8fa;
+    min-height: 50vh;
+    padding-top: 35vh;
+    text-align: center;
+}
+
+.about-header {
+    font-size: 3.75rem;
+    margin-bottom:30px;
+}
+
+.about-par {
+    font-size: 25px;
+    width: 800px;
+    margin: 0 auto;
+}
+
+.work-header {
+    margin:65px 0px 40px;
+}
+
+.porfolio {
+    padding-top: 60px;
+    margin-top: -60px;
+  }
+  
+  .porfolio .porfolio-header {
+    margin-top: 50px;
+    color: #008080;
+    font-weight: normal;
+  }
+  
+  .project {
+    text-decoration: none;
+    color: #34495e;
+    display: inline-block;
+    overflow: hidden;
+    height: 220px;
+    width: 300px;
+    margin: 40px 100px;
+    font-size:20px;
+ 
+  }
+  
+  .project-image {
+    width: 100%;
+    height: 180px;
+    border-bottom: 2px solid lightblue;
+  }
+  
+  .project-title {
+    font-weight: bold;
+  }
+  
+  @media only screen and (max-width: 500px) {
+    nav ul {
+      text-align: center;
+    }
+    nav ul li {
+      margin: 20px;
+    }
+    .project {
+      margin: 40px 0;
+    }
+  }
+  
+  .connect {
+   padding-bottom: 140px;
+   background: url("../images/dust.png")
+  }
+  
+  .header {
+    padding: 140px 0 90px;
+  }
+  
+  .connect-details {
+    display: inline-block;
+    font-weight: bold;
+    margin: 0 35px 45px 35px;
+    list-style-type: none;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    text-decoration: none;
+    font-size: 60px;
+  }
+
+ .linkedin {
+     color:#2878b5
+ } 
+
+ .github {
+   color:#24282d
+ }
+
+ .mail {
+     color:#d84b3f
+ }
+
+  footer {
+    padding: 20px;
+    background: #22313F;
+    color: white;
+    line-height: 40px;
+  }
+  
+  footer a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  @media only screen and (max-width: 367px) {
+    /*    #contact{
+      min-height:1100px;
+    } */
+    .contact-details {
+      border: 2px solid #90C695;
+      border-radius: 0;
+      width: 90px;
+      height: 20px;
+      padding: 10px;
+      line-height: normal;
+    }
+  }
+
