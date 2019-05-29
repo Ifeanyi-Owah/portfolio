@@ -1,159 +1,494 @@
 * {
   padding: 0;
-  margin:0
+  margin: 0;
+  box-sizing: border-box;
 }
 
 html,
 body {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   text-align: center;
+  color: #555;
+  font-size: 16px;
+  box-sizing: border-box;
+
+}
+
+nav {
+  display:flex;
+  justify-content:space-between;
+  align-items: center;
+  position:fixed;
+  width:100vw;
+  background-color: #34495e;
+  padding: 30px 15px;
+  font-size: 1.125rem;
+  z-index: 1;
+
+}
+
+nav p a {
+  color:white;
+  text-decoration: none;
+  font-size: 20px;
 }
 
 nav ul {
-    text-align: right;
-    position: fixed;
-    width: 100%;
-    background-color: #34495e;
-    padding:0.625rem;
-    font-size:1.125rem;
-  }
-  nav ul li {
-    display: inline-block;
-    margin: 50px;
-    margin-bottom: 15px;
-    margin-top: 25px;
-    
-  }
+  display:flex;
+  /* border:1px solid red; */
+  width: 35vw;
+  justify-content: space-between;
+  color:white;
 
-  nav ul li a {
-    text-decoration: none;
-    color: #e6e6e6;
-  }
+}
+
+nav ul li {
+  list-style-type: none;
+}
+
+
+nav ul li a {
+  text-decoration: none;
+  color: #e6e6e6;
+} 
 
 .about {
-    top: 0;
-    background: #edf8fa;
-    min-height: 50vh;
-    padding-top: 35vh;
-    text-align: center;
+  /* top: 0; */
+  position: relative;
+  /* background: #edf8fa; */
+  /* background: url('../images/Technology Flat Illustration.png'); */
+  min-height: 50vh;
+  padding: 25vh;
+  text-align: center;
 }
 
 .about-header {
-    font-size: 3.75rem;
-    margin-bottom:30px;
+  font-size: 35px;
+  /* margin-bottom:30px; */
 }
 
 .about-par {
-    font-size: 25px;
-    width: 800px;
-    margin: 0 auto;
+  width: 800px;
+  margin: 0 auto;
+  line-height: 28px;
+  font-size: 16px;
+}
+
+.experience-section {
+  display:flex;
+  flex-direction: column;
+  background: #f2f2f2;
+  width: 100vw;
+  padding-top: 60px;
+}
+
+.experience-section h2 {
+  margin-bottom: 50px;
+}
+
+.experience {
+  height: 400px;
+  display: flex;
+ }
+
+.experience div {
+  width: 30%;
+  height: 300px;
+  padding-top: 20px;
+  background: #fff;
+  box-shadow: 3px 3px 3px rgba(136, 136, 136, 0.4);
+  vertical-align: center;
+}
+
+.experience div h3 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.experience div p {
+  /* line-height: 20px; */
+}
+
+.experience-summary {
+  font-size: 16px;
+  padding: 10px;
+  line-height: 28px;
+}
+
+.student {
+  border: 0.5px solid #7ec2d1;
+  margin-right: 15px;
+  margin-left: 50px;
+}
+
+.student i {
+  color: #42a3b8;
+}
+
+.junior {
+  border: 0.5px solid #fce39f;
+  margin-right: 15px;
+}
+
+.junior i {
+  color: #fbda7e;
+}
+
+.intern {
+  border: 0.5px solid #b9e1b6;
+}
+
+.intern i {
+  color: #4ca746;
+}
+
+.technology-section {
+  display:flex;
+  width:100vw;
+  flex-direction: column;
+}
+
+.technology-section h2 {
+  margin: 35px 0 35px 0;
+}
+
+.technology-section-list {
+  width: 100%;
+  display:flex;
+  justify-content: center;
+}
+
+.technology-section-list h3 {
+  font-size: 22px;
+  padding-bottom: 18px;
+}
+
+.technology-section-list div {
+  width: 30%;
+  height: 300px;
+  margin-right:20px;
+  padding-top: 20px;
+  box-shadow: 3px 3px 3px rgba(136, 136, 136, 0.4);
+  background: rgba(40, 120, 181, 0.05);
+}
+
+.front-end p, .back-end p, .database p {
+  margin: 15px;
+  font-size: 23px;
+  text-align: left;
+  margin-left:50px;
+}
+
+.fa-html5 {
+  color:#e44d32;
+}
+
+.fa-css3 {
+  color:#2473ba
+}
+
+.fa-js-square {
+  color:#f7e04b;
+}
+
+.fa-file-code {
+  color:#1f69ad;
+}
+
+.fa-react {
+  color:#53c1de
+}
+.fa-node {
+  color:#71a861;
+  font-size: 40px;
+}
+
+.fa-node-js {
+  color:#71a861
+}
+
+div.back-end {
+  background: rgba(251, 218, 126, 0.3);
+}
+
+div.database {
+  background: rgba(76, 167, 70, 0.3);
 }
 
 .work-header {
-    margin:65px 0px 40px;
+  margin: 65px 0px 40px;
 }
 
 .porfolio {
-    padding-top: 60px;
-    margin-top: -60px;
+  padding-top: 60px;
+  margin-top: -60px;
+}
+
+.porfolio .porfolio-header {
+  margin-top: 50px;
+  color: #008080;
+  font-weight: normal;
+}
+
+.project {
+  text-decoration: none;
+  color: #34495e;
+  display: inline-block;
+  overflow: hidden;
+  height: 220px;
+  width: 300px;
+  margin: 40px 100px;
+  font-size: 20px;
+
+}
+
+.project-image {
+  width: 100%;
+  height: 180px;
+  border-bottom: 2px solid lightblue;
+}
+
+.project-title {
+  font-weight: bold;
+}
+
+@media screen and (max-width:1127px){
+  nav ul {
+    width: 60vw;
   }
-  
-  .porfolio .porfolio-header {
-    margin-top: 50px;
-    color: #008080;
-    font-weight: normal;
+  .experience-section{
+    min-height:1040px;
+    padding-bottom:30px;
   }
-  
+   .experience {
+     flex-direction: column;
+     align-items: center; 
+   }
+   .experience div {
+     width: 90%;
+     margin:20px;
+     padding-bottom: 20px;
+   }
+
+   .technology-section{
+    min-height:1040px;
+    padding-bottom:30px;
+  }
+   .technology-section-list {
+     flex-direction: column;
+     align-items: center; 
+   }
+   .technology-section-list div {
+     width: 90%;
+     margin:20px;
+     padding-bottom: 20px;
+   }
+   .about-header {
+    width:100vw;
+    text-align: center
+   
+  }
+  .about-par {
+    width: 100vw;
+    text-align: center
+  }
+
+  .hero {
+    margin-left:130px;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width:640px){
+   nav p a {
+     display:none;
+   }
+
+   nav ul {
+     width: 100vw;
+   }
+
+   nav {
+     display: flex;
+     justify-content: space-between
+   }
+   
+   .experience-section{
+     min-height:1200px;
+   }
+
+   .experience {
+     flex-direction: column;
+     flex-basis: 500px;
+     align-items: center; 
+   }
+
+   .experience div {
+     margin:20px;
+     padding-top:8px;
+     min-height: 250px;
+     /* padding-bottom: 10px; */
+     width: 90%;
+   }
+
+   .technology-section{
+    min-height:1200px;
+  }
+
+  .technology-section-list {
+    flex-direction: column;
+    flex-basis: 500px;
+    align-items: center; 
+  }
+
+  .technology-section-list div {
+    margin:20px;
+    padding-top:8px;
+    min-height: 250px;
+    /* padding-bottom: 10px; */
+    width: 90%;
+  }
+
+  .front-end p, .back-end p, .database p {
+    margin: 15px;
+    margin-left:100px;
+  }
+
+  .about-header {
+    width:100vw;
+   text-align: center;
+  }
+
+  .about-par {
+    width: 100vw;
+    text-align: center
+  }
+
+
+}
+
+@media screen and (max-width:400px){
+  nav p a {
+    display:none;
+  }
+  nav ul {
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+  }
+
+  .about-link {
+   margin-top:8px;
+  }
+
+  nav ul li {
+    margin:10px;
+  }
+  .technology-section-list {
+    flex-direction: column;
+    flex-basis: 500px;
+    align-items: center; 
+  }
+
+  .technology-section-list div {
+    min-height: 350px;
+    padding-bottom: 10px;
+  }
+
+  .about-header {
+    width:100vw;
+    text-align: center
+   
+  }
+  .about-par {
+    width: 100vw;
+    text-align: center
+  }
+}
+
+
+@media only screen and (max-width: 500px) {
+  nav ul {
+    text-align: center;
+  }
+
+  nav ul li {
+    margin: 20px;
+  }
+
   .project {
-    text-decoration: none;
-    color: #34495e;
-    display: inline-block;
-    overflow: hidden;
-    height: 220px;
-    width: 300px;
-    margin: 40px 100px;
-    font-size:20px;
- 
-  }
-  
-  .project-image {
-    width: 100%;
-    height: 180px;
-    border-bottom: 2px solid lightblue;
-  }
-  
-  .project-title {
-    font-weight: bold;
-  }
-  
-  @media only screen and (max-width: 500px) {
-    nav ul {
-      text-align: center;
-    }
-    nav ul li {
-      margin: 20px;
-    }
-    .project {
-      margin: 40px 0;
-    }
-  }
-  
-  .connect {
-   padding-bottom: 140px;
-   background: url("../images/dust.png")
-  }
-  
-  .header {
-    padding: 140px 0 90px;
-  }
-  
-  .connect-details {
-    display: inline-block;
-    font-weight: bold;
-    margin: 0 35px 45px 35px;
-    list-style-type: none;
-    width: 100px;
-    height: 100px;
-    line-height: 100px;
-    text-decoration: none;
-    font-size: 60px;
+    margin: 40px 0;
   }
 
- .linkedin {
-     color:#2878b5
- } 
-
- .github {
-   color:#24282d
- }
-
- .mail {
-     color:#d84b3f
- }
-
-  footer {
-    padding: 20px;
-    background: #22313F;
-    color: white;
-    line-height: 40px;
+  .about-header {
+    width:100vw;
+    text-align: center
+   
   }
-  
-  footer a {
-    color: white;
-    text-decoration: none;
+
+  .about-par {
+    width: 100vw;
+    text-align: center
   }
-  
-  @media only screen and (max-width: 367px) {
-    /*    #contact{
+
+}
+
+.connect {
+  padding-bottom: 140px;
+  background: url("../images/dust.png")
+}
+
+.header {
+  padding: 140px 0 90px;
+}
+
+.connect-details {
+  display: inline-block;
+  font-weight: bold;
+  margin: 0 35px 45px 35px;
+  list-style-type: none;
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  text-decoration: none;
+  font-size: 60px;
+}
+
+.linkedin {
+  color: #2878b5
+}
+
+.github {
+  color: #24282d
+}
+
+.mail {
+  color: #d84b3f
+}
+
+footer {
+  padding: 20px;
+  background: #22313F;
+  color: white;
+  line-height: 40px;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 367px) {
+
+     #contact{
       min-height:1100px;
-    } */
-    .contact-details {
-      border: 2px solid #90C695;
-      border-radius: 0;
-      width: 90px;
-      height: 20px;
-      padding: 10px;
-      line-height: normal;
-    }
+    } 
+  .contact-details {
+    border: 2px solid #90C695;
+    border-radius: 0;
+    width: 90px;
+    height: 20px;
+    padding: 10px;
+    line-height: normal;
   }
-
+} 

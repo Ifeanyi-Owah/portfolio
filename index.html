@@ -1,60 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Ifeanyi Owah | Full Stack Developer</title>
-    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/main.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Ifeanyi Owah | Full Stack Developer</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/main.css">
 </head>
+
 <body>
-    <nav>
-        <ul id='navbar'>
-          <li><a href="#about-section">About</a></li>
-          <li><a href="#work">Work</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav> 
-    <div id="about-section" class="about">
-        <h1 class="about-header">Ifeanyi Owah</h1>
-        <!-- <img src="./images/sd.jpg" alt="code" style="width:200px;border:0.5px solid;border-radius:100%"> -->
-        <p class="about-par">
-         Full Stack Developer
-        </p>
-    </div> 
+  <nav>
+    <p><a href="/">Ifeanyi Owah</a></p>
+    <ul id='navbar'>
+      <li class="about-link"><a href="#about-section">About</a></li>
+      <li><a href="#technology">Technologies</a></li>
+      <li><a href="#projects">Work</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+  <div id="about-section" class="about">
+    <img class="hero" src="./images/user.png" alt="">
+    <h1 class="about-header">Hi, I'm <span style="color:#2878b5">Ifeanyi!</span></h1>
+    <!-- <img src="./images/sd.jpg" alt="code" style="width:200px;border:0.5px solid;border-radius:100%"> -->
+    <p class="about-par">
+        Full Stack Software Developer with experience delivering customer-facing solutions, I take on increasingly complex technical projects and drive transformation. I am passionate about technology 
+    </p>
   </div>
-  <div id="projects" class="portfolio">
+  </div>
+  <!-- Experience Section -->
+  <section class="experience-section">
+    <h2>Relevant Experience Highlight</h2>
+    <div class="experience">
+      <div class="student">
+        <h3> <i class="fas fa-code-branch"></i> Full Stack Developer | Student</h3>
+        <p><code>University of Toronto BootCamp</code></p>
+        <p class="experience-summary">
+          A rigorous, fast-paced 24-week experiential full stack web development course that incorporated core technical
+          concepts and hands-on application of key web development principles.
+        </p>
+        <p style="color:#2978b4"><small>March 2018 - September 2019</small></p>
+      </div>
+      <div class="junior">
+        <h3> <i class="fas fa-laptop-code"></i> Junior Full Stack Developer</h3>
+        <p>Slatecube</p>
+        <p class="experience-summary">
+          A rigorous, fast-paced 24-week experiential full stack web development course that incorporated core technical
+          concepts and hands-on application of key web development principles.
+        </p>
+        <p style="color:#2978b4"><small>March 2018 - September 2019</small></p>
+      </div>
+      <div class="intern">
+        <h3> <i class="fas fa-code"></i> Front End Developer Trainee</h3>
+        <p>Slatecube</p>
+        <p class="experience-summary">
+          A rigorous, fast-paced 24-week experiential full stack web development course that incorporated core technical
+          concepts and hands-on application of key web development principles.
+        </p>
+        <p style="color:#2978b4"><small>March 2018 - September 2019</small></p>
+      </div>
+    </div>
+   </section>
+    <!--Technologies Section -->
+   <section class="technology-section">
+      <h2>Technologies</h2>
+      <div class="technology-section-list">
+        <div class="front-end">
+          <h3>Front End</h3>
+          <p> <i class="fab fa-html5"></i> HTML</p>
+          <p><i class="fab fa-css3"></i> CSS</p>
+          <p> <i class="fab fa-js-square"></i> javascript</p>
+          <p> <i class="fas fa-file-code"></i> jquery</p>
+          <p> <i class="fab fa-react"></i> Reactjs</p>
+        </div>
+        <div class="back-end">
+          <h3>Back End</h3>
+          <p><i class="fab fa-node"></i></i> Nodejs</p>
+          <p><i class="fab fa-node-js"> </i>Expressjs</p>
+        </div>
+        <div class="database">
+          <h3>Database</h3>
+          <p>mySQL</p>
+          <p>postgre</p>
+          <p>MongoDB</p>
+        </div>
+      </div>
+   </section>
+
+  <!-- Portfolio section  -->
+   <div id="projects" class="portfolio">
     <h2 class="work-header">Some of my Projects..</h2>
-    <a href="https://ifeanyi-owah.github.io/theTourist/" target="_blank" class="project project-tile">
-      <img class="project-image" src="./images/tourist.png" alt="project">
-      <div class="project-title">The Tourist - HTML, CSS</div>
-     
-    </a>
-    <a href="https://ifeanyi-owah.github.io/math-game/" target="_blank" class="project project-tile">
-      <img class="project-image" src="./images/math-game.png" alt="project">
-      <div class="project-title">Math-Game - html, css, javascript</div>
-    </a>
     <a href="https://vast-bastion-22396.herokuapp.com/restaurants" target="_blank" class="project project-tile">
       <img class="project-image" src="./images/tfc.png" alt="project">
       <div class="project-title">Restaurant Review App</div>
     </a>
+    <a href="https://aiface-app.herokuapp.com/" target="_blank" class="project project-tile">
+      <img class="project-image" src="./images/ai.png" alt="project">
+      <div class="project-title">AI Face Recognition app</div>
+  </a>
+    <a href="https://ifeanyi-owah.github.io/theTourist/" target="_blank" class="project project-tile">
+      <img class="project-image" src="./images/tourist.png" alt="project">
+      <div class="project-title">The Tourist</div>
+  </a>
+    <a href="https://ifeanyi-owah.github.io/math-game/" target="_blank" class="project project-tile">
+      <img class="project-image" src="./images/math-game.png" alt="project">
+      <div class="project-title">Math-Game</div>
+    </a>
+  
     <a href="https://ifeanyi-owah.github.io/calculator/" target="_blank" class="project project-tile">
       <img class="project-image" src="./images/calculator.png" alt="project">
-      <div class="project-title">JS Calculator - html, css, jquery</div>
+      <div class="project-title">JS Calculator</div>
     </a>
   </div>
+  
   <div id="contact" class="connect">
     <div class="header">
       <h1>Connect with me and let's build world class apps</h1>
-   </div>
-    <a id='profile-link' href="https://www.linkedin.com/in/ifeanyiowah/" target="_blank" class="connect-details linkedin"><i class="fab fa-linkedin"></i></a>
-    <a href="https://github.com/Ifeanyi-Owah" target="_blank" class="connect-details github"><i class="fab fa-github"></i></a>
+    </div>
+    <a id='profile-link' href="https://www.linkedin.com/in/ifeanyiowah/" target="_blank"
+      class="connect-details linkedin"><i class="fab fa-linkedin"></i></a>
+    <a href="https://github.com/Ifeanyi-Owah" target="_blank" class="connect-details github"><i
+        class="fab fa-github"></i></a>
     <a href="mailto:ifeanyi.owah.io@gmail.com" class="connect-details mail"><i class="fas fa-at"></i></a>
   </div>
   <footer>
-    <p>&copy;  Copyright 2019 <a href="Ifeanyi-Owah.GitHub.io/portfolio" target="_blank"> Ifeanyi Owah</a></p>
+    <p>&copy; Copyright 2019 <a href="Ifeanyi-Owah.GitHub.io/portfolio" target="_blank"> Ifeanyi Owah</a></p>
   </footer>
 </body>
+
 </html>
